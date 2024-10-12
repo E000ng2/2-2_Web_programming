@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text = "|${mid}님의 정보가 유출되었습니다.|"></title>
+    <style>
+        body { background-color : aqua}
+    </style>
+</head>
+<body>
+    <strong th:text = "${mid}">mid</strong>의 비번을 알고 있다.<p>
+    <strong th::text = "${mpw}">mpw</strong>맞지? 아하하핳!!!
+</body>
+</html>

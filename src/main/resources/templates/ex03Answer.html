@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta chrset = "UTF-8">
+    <title th:text = "|${mid}'s color|"></title>
+</head>
+<body th:style = "|background-color : ${color}|">
+    <strong th:text = "${mid}">mid</strong>님이 좋아하는 색은<br>
+    <strong th:text = "${color}">color</strong>입니다.
+</body>
+
+</html>
