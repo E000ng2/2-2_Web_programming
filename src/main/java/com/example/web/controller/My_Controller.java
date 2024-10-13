@@ -67,4 +67,6 @@ public class My_Controller {
         mo.addAttribute("color", color);
         return "ex03Answer";
      }
+
+     // 테스트 주석
 }
