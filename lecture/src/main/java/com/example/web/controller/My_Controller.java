@@ -1,5 +1,7 @@
 package com.example.web.controller;
 
+import java.util.ArrayList;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -68,5 +70,16 @@ public class My_Controller {
         return "ex03Answer";
      }
 
-     // 테스트 주석
+     @GetMapping("/ex04")
+     public String ex04(Model mo)
+     {
+      var arr = new ArrayList<String>();
+      arr.add("고흐");
+      arr.add("james");
+      arr.add("dooli");
+      arr.add("bread");
+      mo.addAttribute("arr", arr);
+      return "ex04";
+     }
+     
 }
