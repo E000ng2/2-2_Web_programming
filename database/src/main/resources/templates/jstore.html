@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>구매 목록</title>
+    <style>
+        body{background-color: blanchedalmond;}
+    </style>
+</head>
+<body>
+    <h2>구매 목록</h2>
+    <table border = "1">
+        <tr> <th>구매번호<th>고객아이디<th>상품명<th>구매수량<th>구매일시
+        <tr th:each = "a:${arr}">
+            <td th:text="${a.no}">
+            <td th:text="${a.mid}">
+            <td th:text="${a.product}">
+            <td th:text="${a.amount}">
+            <td th:text="${a.pdate}">
+    </table>
+</body>
+</html>

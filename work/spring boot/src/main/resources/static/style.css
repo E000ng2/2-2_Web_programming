@@ -1,0 +1,4 @@
+body { background-color : rgb(40, 150, 88)}
+h2 { color : rgb(206, 198, 198); margin-left : 40px;}
+li::marker { color : rgb(176, 71, 71);}
+a {color : rgb(206, 198, 198);}
