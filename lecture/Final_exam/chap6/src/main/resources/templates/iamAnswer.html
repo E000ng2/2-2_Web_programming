@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>결과</title>
+    <style>
+        body { background-color: rgb(231, 231, 173); }
+        span { color: blue; }
+        #commits { color: gray; font-size: 0.8em}
+    </style>
+</head>
+<body>
+    저는 <span  th:text = "${age}"></span>세 <span  th:text = "${gender}"></span>학생입니다.<p></p>
+    좋아하는 동물은 다음과 같습니다.
+    <div th:each = "a:${animal}">
+            <span th:text = "${a}">animal</span>
+    </div>
+    <p></p>
+    저의 자신감 수치(1-5)는 다음과 같습니다.<br>
+    외모 자신감: <span th:text = "${confidence1}"></span><br>
+    학점 자신감: <span th:text = "${confidence2}"></span><br>
+    수업 자신감: <span th:text = "${confidence3}"></span><p>
+    
+    <span id = "commits" th:text = "${commits}"></span>
+</body>
+</html>

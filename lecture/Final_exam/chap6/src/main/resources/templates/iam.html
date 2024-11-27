@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>학번 이름</title>
+    <style>
+        h3 { color:brown; }
+        fieldset { width: 400px; border : 1px solid orange; }
+        legend { color: darkgray; font-size: 0.8em; }
+        textarea { background-color: lightgray; }
+        button { padding:5px 20px; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <form method="post" action = "/animal/report">
+        <h3>자기소개</h3>
+        <fieldset>
+            <legend>성별과 나이를 입력하세요</legend>
+            성별: <input type = "radio" name = "gender" value = "남" checked>남자
+                  <input type = "radio" name = "gender" value = "여" >여자<br>
+            나이: <input type = "number" name = "age" required>
+        </fieldset>
+        <p>
+        <fieldset>
+            <legend>관심있는 동물 선택하세요.(복수 가능)</legend>
+            <input type = "checkbox" name = "animal" value = "토끼">깡총! 깡총! 토끼<br>
+            <input type = "checkbox" name = "animal" value = "강아지">멍멍~! 강아지<br>
+            <input type = "checkbox" name = "animal" value = "기린">목이 긴~~~~~기린<br>
+            <input type = "checkbox" name = "animal" value = "사자">어흥~! 사자
+        </fieldset>
+        <p>
+        <fieldset>
+            <legend>나의 자신감은 어느 정도인가?</legend>
+            나는 무지 잘생겼다. 1 <input type = "range" name = "confidence1" min = "1" max = "5" value = "1">5<br>
+            나는 마음만 먹으면 A+이다. 1 <input type = "range" name = "confidence2" min = "1" max = "5" value = "1">5<br>
+            수업 중 산만해 보여도 머리속에는 내용이 잘 정리되어 있다. 1 <input type = "range" name = "confidence3" min = "1" max = "5" value = "1">5
+        </fieldset>
+        <p>
+        <textarea name = "commits" rows = "4" cols = "61" placeholder="Promote yourself"></textarea><p>
+        <button type = "submit">작성완료</button><button type = "reset">새로 작성</button>
+    </form>
+</body>
+</html>
